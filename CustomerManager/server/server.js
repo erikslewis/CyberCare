@@ -12,8 +12,8 @@ var express = require('express'),
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
-app.use(session({ 
-    secret: 'customermanagerstandard', 
+app.use(session({
+    secret: 'customermanagerstandard',
     saveUninitialized: true,
     resave: true }));
 app.use(cookieParser());
@@ -35,9 +35,8 @@ process.on('uncaughtException', function (err) {
     if (err) console.log(err, err.stack);
 });
 
-//Local Connection 
-var conn = 'mongodb://localhost/customermanager';
-var db = new DB.startup(conn);
+//Local Connection
+var conn= process.env.MONGODB_URI || 'mongodb://localhost/customermanager';
 
 // Routes
 app.get('/', routes.index);
