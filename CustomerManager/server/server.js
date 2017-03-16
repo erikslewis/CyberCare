@@ -36,7 +36,7 @@ process.on('uncaughtException', function (err) {
 });
 
 //Local Connection
-var conn= process.env.MONGODB_URI || 'mongodb://localhost/customermanager';
+var conn= process.env.MONGODB_URI || 'mongodb://heroku_c9x7jrn3:vp5k11f1ubb0evd0njtcukoaig@ds133290.mlab.com:33290/heroku_c9x7jrn3';
 var db = new DB.startup(conn);
 
 // Routes
