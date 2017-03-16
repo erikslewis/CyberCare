@@ -36,8 +36,15 @@ process.on('uncaughtException', function (err) {
 });
 
 //Local Connection
-var conn= process.env.MONGODB_URI || 'mongodb://heroku_c9x7jrn3:vp5k11f1ubb0evd0njtcukoaig@ds133290.mlab.com:33290/heroku_c9x7jrn3';
+//var conn = 'mongodb://localhost/customermanager';
+//var db = new DB.startup(conn);
+
+var conn = process.env.MONGODB_URI || 'mongodb://localhost/customermanager';
+console.log('**********************************************************');
+console.log(conn);
+console.log('**********************************************************');
 var db = new DB.startup(conn);
+
 
 // Routes
 app.get('/', routes.index);
@@ -67,6 +74,11 @@ app.get('*', routes.index);
 
 // Start server
 
-app.listen(3000, function () {
+// var server = app.listen( process.env.PORT || 3001, function(){
+//   console.log('Listening on port ' + server.address().port);
+// });
+
+//app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
     console.log("CustMgr Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
