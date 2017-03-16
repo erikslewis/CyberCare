@@ -3,19 +3,19 @@ var db = db.getSiblingDB('customermanager');
 //Customers
 var customerNames =
 [
-    "Marcus,HighTower,Male,acmecorp.com",
-    "Jesse,Smith,Female,gmail.com",
-    "Albert,Einstein,Male,outlook.com",
-    "Dan,Wahlin,Male,yahoo.com",
-    "Ward,Bell,Male,gmail.com",
-    "Brad,Green,Male,gmail.com",
-    "Igor,Minar,Male,gmail.com",
+    "Marcus,jones,Male,acmecorp.com",
+    "Jessica,Smith,Female,gmail.com",
+    "Alberto,Einsteino,Male,outlook.com",
+    "Doug,Pin,Male,yahoo.com",
+    "Sard,Ball,Male,gmail.com",
+    "Brain,Red,Male,gmail.com",
+    "Joe,Mine,Male,gmail.com",
     "Miško,Hevery,Male,gmail.com",
-    "Michelle,Avery,Female,acmecorp.com",
-    "Heedy,Wahlin,Female,hotmail.com",
-    "Thomas,Martin,Male,outlook.com",
-    "Jean,Martin,Female,outlook.com",
-    "Robin,Cleark,Female,acmecorp.com",
+    "Michelle,Ava,Female,acmecorp.com",
+    "Rainy,lander,Female,hotmail.com",
+    "Thomas,Martell,Male,outlook.com",
+    "Jean,Martell,Female,outlook.com",
+    "Steffany,Clark,Female,acmecorp.com",
     "Juan,Paulo,Male,yahoo.com",
     "Gene,Thomas,Male,gmail.com",
     "Pinal,Dave,Male,gmail.com",
@@ -23,9 +23,10 @@ var customerNames =
     "Tina,Roberts,Female,outlook.com",
     "Cindy,Jamison,Female,gmail.com",
     "Robyn,Flores,Female,yahoo.com",
-    "Jeff,Wahlin,Male,gmail.com",
-    "Danny,Wahlin,Male,gmail.com",
+    "Jeff,Fountaine,Male,gmail.com",
+    "Danny,Switzer,Male,gmail.com",
     "Elaine,Jones,Female,yahoo.com"
+    "Erik,Shepard-Lewis,Male,gmail.com"
 ];
 var addresses =
 [
@@ -229,7 +230,3 @@ for (i = 0; i < l; i++) {
     var r = { 'id': i + 1, 'name': states[i].name, 'abbreviation': states[i].abbreviation };
     db.states.insert(r);
 }
-
-
-
-

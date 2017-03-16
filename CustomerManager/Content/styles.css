@@ -58,7 +58,8 @@ body {
 
 #ng-view {
     position: relative;
-    padding-top: 50px;
+    padding-top: 40px;
+
 }
 
 #nav-login {
@@ -70,11 +71,12 @@ body {
 }
 
 .view {
+  padding-top: 18px
 
 }
 
 .white {
-    color: white;
+    color: Lightgreen;
 }
 
 .white:hover{
@@ -90,7 +92,7 @@ body {
 }
 
 .cardHeader {
-    background-color:#027FF4;
+    background-color:#778899;
     font-size:14pt;
     color:white;
     padding:5px;
@@ -98,7 +100,7 @@ body {
 }
 
 .cardClose {
-    color: white;
+    color: red;
     font-weight:bold;
     margin-right:5px;
 }
@@ -139,14 +141,16 @@ body {
 .ordersTable {
     width:85%;
 }
-
+a{
+  color:black;
+}
 .orders th, .customers th {
     width:20%;
     cursor: pointer;
 }
 
 .ordersTable tr:first-child th, .customersTable tr:first-child th {
-    background-color: #027FF4;
+    background-color: #778899;
     color: #fff;
     font-weight: bold;
 }
@@ -166,11 +170,11 @@ footer {
     font-weight: bold;
 }
 
-.customerEdit input[type='text'], 
+.customerEdit input[type='text'],
 .customerEdit input[type='number'],
 .customerEdit input[type='email'],
 .customerEdit select,
-.login input[type='text'], 
+.login input[type='text'],
 .login input[type='email'],
 .login input[type='password'] {
     width:250px;
@@ -183,7 +187,7 @@ footer {
 /* Bootstrap overrides */
 
 /* Added to fix Bootstrap 3 issue with Angular UI Bootstrap modal dialog*/
-.modal { 
+.modal {
   display: block;
   overflow: hidden;
   overflow-y: hidden;
@@ -195,8 +199,8 @@ footer {
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
-  background-color: #027FF4;
-  border-color: #027FF4;
+  background-color: lightgreen;
+  border-color: black;
 }
 
 .cardContainer .col-md-3 {
@@ -212,7 +216,7 @@ footer {
 }
 
 a.navbar-brand {
-    color: #fff;
+    color: lightgreen;
 }
 
 .navbar-inner {
@@ -222,8 +226,12 @@ a.navbar-brand {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    background-color: #027FF4;
-    background-image: none;
+    background-color: #778899;
+    background-image:url("https://media.licdn.com/media/AAEAAQAAAAAAAAf8AAAAJGUyZTM3NTgyLWIzMmQtNGZlOS04MTI2LTIzNmY0NTdkZjYwYQ.png");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: right;
+
 }
 
 .navbar-inner.toolbar {
@@ -231,22 +239,24 @@ a.navbar-brand {
 }
 
 .navbar-inner.footer {
-    background-color: #fafafa;
+    background-color: #778899;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
     height:50px;
+    color: black;
 }
 
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
-    background-color: #efefef;
+    background-color: silver;
     -webkit-box-shadow: none;
     box-shadow: none;
-    color: #808080;
+    color: lightgreen;
 }
 
 .navbar .nav li.toolbaritem a:hover, .navbar .nav li a:hover {
-    color: #E03930;
+    color: lightgreen;
+    background-color: black;
 }
 
 .navbar .nav > li  {
@@ -358,7 +368,7 @@ input.ng-valid, select.ng-valid, input.ng-valid-required, select.ng-valid.requir
 
 @media screen and (max-width: 640px) {
 
-    navbar-toggle { 
+    navbar-toggle {
         display: none;
     }
 

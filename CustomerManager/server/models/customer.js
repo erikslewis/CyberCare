@@ -34,6 +34,7 @@ var CustomerSchema = new Schema({
   email : {
     type : String, required: true, trim: true
   },
+
   address : {
     type : String, required: true, trim: true
   },
@@ -58,7 +59,7 @@ var CustomerSchema = new Schema({
     type : Number, required: true
   },
   gender : {
-    type : String,
+    type : Number,
   },
   id : {
     type : Number, required: true, unique: true

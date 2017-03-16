@@ -41,10 +41,12 @@ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+
 }
 
 body {
   margin: 0;
+
 }
 
 a {
@@ -307,7 +309,14 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #F5F5F5;
+background-image: url("http://www140.lunapic.com/editor/working/148962016190624?2001516749");
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position:center;
+background-size: 500px;
+
+
 }
 
 input,
@@ -2344,13 +2353,16 @@ fieldset[disabled] .btn-default.active {
 
 .btn-default .badge {
   color: #ffffff;
-  background-color: #fff;
+  background-color: black;
 }
 
 .btn-primary {
-  color: #ffffff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  color: lightgreen;
+  background-color: black;
+  border-color: black;
+  border-style: double;
+  border-width: thick;
+  border-style: solid;
 }
 
 .btn-primary:hover,
@@ -2359,8 +2371,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #3276b1;
-  border-color: #285e8e;
+  background-color: black;
+  border-color: gray;
 }
 
 .btn-primary:active,
@@ -2384,13 +2396,13 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: black;
+  border-color: black;
 }
 
 .btn-primary .badge {
   color: #428bca;
-  background-color: #fff;
+  background-color: black;
 }
 
 .btn-warning {
@@ -2440,9 +2452,12 @@ fieldset[disabled] .btn-warning.active {
 }
 
 .btn-danger {
-  color: #ffffff;
-  background-color: #d9534f;
-  border-color: #d43f3a;
+  color: lightgreen;
+  background-color: black;
+  border-color: black;
+  border-style: double;
+  border-width: thick;
+  border-style: solid;
 }
 
 .btn-danger:hover,
@@ -2450,7 +2465,7 @@ fieldset[disabled] .btn-warning.active {
 .btn-danger:active,
 .btn-danger.active,
 .open .dropdown-toggle.btn-danger {
-  color: #ffffff;
+  color: white;
   background-color: #d2322d;
   border-color: #ac2925;
 }
@@ -4511,10 +4526,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
   margin-top: 8px;
   margin-right: 15px;
   margin-bottom: 8px;
-  background-color: transparent;
+  background-color: black;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
+  color: lightgreen;
 }
 
 .navbar-toggle .icon-bar {
@@ -4946,7 +4962,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   margin-left: -1px;
   line-height: 1.428571429;
   text-decoration: none;
-  background-color: #ffffff;
+  background-color:silver;
   border: 1px solid #dddddd;
 }
 
@@ -4967,7 +4983,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  background-color: #eeeeee;
+  background-color: black;
 }
 
 .pagination > .active > a,
@@ -4977,7 +4993,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
   z-index: 2;
-  color: #ffffff;
+  color: red;
+
   cursor: default;
   background-color: #428bca;
   border-color: #428bca;
@@ -4989,9 +5006,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pagination > .disabled > a,
 .pagination > .disabled > a:hover,
 .pagination > .disabled > a:focus {
-  color: #999999;
+  color: gray;
   cursor: not-allowed;
-  background-color: #ffffff;
+  background-color: black;
   border-color: #dddddd;
 }
 

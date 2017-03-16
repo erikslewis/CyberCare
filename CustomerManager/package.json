@@ -1,6 +1,6 @@
 {
     "name": "CustomerManager",
-    "author": "Dan Wahlin",
+    "author": "Erik Shepard-Lewis",
     "version": "1.0.0",
     "dependencies": {
       "express": "4.9.7",
@@ -20,5 +20,3 @@
        "phantomjs": "^1.9.11"
      }
 }
-
-

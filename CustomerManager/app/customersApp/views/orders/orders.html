@@ -7,7 +7,7 @@
         <div class="customerEdit">
             <form class="form-horizontal" role="form">
                 <div class="form-group">
-                    <label class="navbarText col-sm-2">Filter by Name/Product:</label>
+                    <label class="navbarText col-sm-2">Filter by Name or Item:</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control novalidate"
                                data-ng-model="vm.searchText"
@@ -27,7 +27,7 @@
             </div>
             <div class="row show-hide-animation" data-ng-show="vm.filteredCustomers.length == 0">
                 <div class="col-md-12">
-                    <h4>No customers found</h4>
+                    <h4>No Information matches the input, try again.</h4>
                 </div>
             </div>
             <div class="row show-hide-animation" data-ng-show="vm.customers.length > 0" style="margin-left:0px;">
@@ -46,4 +46,3 @@
     </div>
     <br /><br /><br />
 </div>
-
