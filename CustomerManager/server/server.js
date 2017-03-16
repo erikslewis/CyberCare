@@ -37,6 +37,7 @@ process.on('uncaughtException', function (err) {
 
 //Local Connection
 var conn= process.env.MONGODB_URI || 'mongodb://localhost/customermanager';
+var db = new DB.startup(conn);
 
 // Routes
 app.get('/', routes.index);
