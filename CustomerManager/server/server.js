@@ -39,7 +39,7 @@ process.on('uncaughtException', function (err) {
 //var conn = 'mongodb://localhost/customermanager';
 //var db = new DB.startup(conn);
 
-var conn = process.env.MONGODB_URI || 'mongodb://localhost/customermanager';
+var conn = process.env.MONGODB_URI || 'mongodb://localhost/customermanager/CustomerManager/server/accessDB.js'; 
 console.log('**********************************************************');
 console.log(conn);
 console.log('**********************************************************');
