@@ -42,7 +42,7 @@ exports.addCustomer = function (req, res) {
 exports.editCustomer = function (req, res) {
     console.log('*** editCustomer');
 
-    db.getState(req.body.stateId, function (err, state) {
+    db.getState(req.body.state, function (err, state) {
         if (err) {
             console.log('*** getState err');
             res.json({ 'status': false });
@@ -168,8 +168,3 @@ exports.logout = function (req, res) {
     //Simulate logout
     res.json({ status: true });
 };
-
-
-
-
-

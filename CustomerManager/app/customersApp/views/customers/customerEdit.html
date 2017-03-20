@@ -95,18 +95,16 @@
                     </div>
                 </div>
                 <br />
+
+                <br />
                 <div class="row">
                     <div class="col-md-2">
-                        State:
+                        state:
                     </div>
                     <div class="col-md-10">
-                        <select name="state" required class="form-control"
-                                data-ng-model="vm.customer.stateId"
-                                data-ng-options="state.id as state.name for state in vm.states">
-                            <option value=""></option>
-                        </select>
+                        <input type="text" name="state" class="form-control" data-ng-model="vm.customer.state" required />
                         <span class="errorMessage" ng-show="editForm.state.$touched && editForm.state.$invalid">
-                            2 character state is required
+                            City is required
                         </span>
                     </div>
                 </div>
