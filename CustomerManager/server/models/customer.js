@@ -41,10 +41,18 @@ var CustomerSchema = new Schema({
   city : {
     type : String, required: true, trim: true
   },
-
+  stateId : {
+    type : Number, required: true
+  },
   state : {
-
+    id : {
+      type : Number
+    },
+    abbreviation : {
       type : String, required: true, trim: true
+    },
+    name : {
+      type :  String, required: true, trim: true
     }
   },
   zip : {
